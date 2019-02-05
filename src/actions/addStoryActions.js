@@ -7,7 +7,7 @@ export const ADD_STORY_FAILURE = 'ADD_STORY_FAILURE';
 export const addStory = story => dispatch => {
     dispatch({ type: ADD_STORY_START });
     axios
-        .post('http://localhost:3300/api/stories', story)
+        .post('https://refugeestories.herokuapp.com/api/submit', story)
         .then(res => {
             dispatch({ type: ADD_STORY_SUCCESS, payload: res.data });
         })

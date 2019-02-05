@@ -3,3 +3,4 @@ export { default as AddStoryFormView } from './AddStoryFormView';
 
 export { default as HomeView } from './HomeView';
 export { default as AboutUsView } from './AboutUsView';
+export { default as ThankYouView } from './ThankYouView';

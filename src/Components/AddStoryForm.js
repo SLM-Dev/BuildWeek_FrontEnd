@@ -22,6 +22,7 @@ class AddStoryForm extends React.Component {
     addNewStory = event => {
         event.preventDefault();
         this.props.addStory(this.state);
+        this.props.history.push('/thank-you');
     };
 
     render() {
