@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import './App.css';
 
-import { HomeView, StoriesView, AddStoryFormView } from '../views';
+import { HomeView, StoriesView, AddStoryFormView, AboutUsView } from '../views';
 
 // import authenticate from './authentication';
 
@@ -25,7 +25,7 @@ class App extends Component {
       <div className="App">
 
         <div className="topBar">
-        
+
           <nav>
             <div className="nav-links">
               <NavLink to="/about-us">About Us</NavLink>
@@ -35,6 +35,7 @@ class App extends Component {
             </div>
           </nav>
 
+          <Route path="/about-us" component={AboutUsView} />
           <Route exact path="/" component={HomeView} />
           <Route exact path="/stories" component={StoriesView} />
           <Route path="/add-story" render={props => <AddStoryFormView {...props} />} />
