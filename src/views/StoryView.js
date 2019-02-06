@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import Story from '../Components/Story';
 
+import { getStories } from "../actions";
+
 class StoryView extends React.Component {
     render() {
         //Find the story at this address
@@ -11,22 +13,22 @@ class StoryView extends React.Component {
         const story = this.props.stories.find(
             story => `${story.id}` === this.props.match.params.id
         );
-    
+            console.log(story)
     return (
         <div>
-            Name: {this.props.id}
+            Hello from StoryView
+            
+            <Story story={story}/>
         </div>
     );
     }
 };
 
-const mapStateToProps = state => ({
-    stories: state.stories
-  });
+function mapStateToProps(state) {
+    return {
+        stories: state.stories,
+        isFetching: state.fetchingStories
+    };
+}
 
-// export default StoryView;
-
-export default connect(
-    mapStateToProps,
-    {  }
-  )(StoryView);
+export default connect(mapStateToProps, { getStories })(StoryView);

@@ -2,16 +2,13 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 
 const Story = props => {
-
-    const story = props.stories.find(
-        story => `${story.id}` === props.match.params.id
-    );
-    
+    console.log(props)
     return (
         <div>
-            <h4>{story.title}</h4>
-            <p>{story.snippet}</p>
-            <p>By: {story.author}</p>
+            <h4>{props.story.title}</h4>
+            <p>{props.story.snippet}</p>
+            <p>By: {props.story.author}</p>
+            <p>{props.story.body}</p>
         </div>
     )
 };

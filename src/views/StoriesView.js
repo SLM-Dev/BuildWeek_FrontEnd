@@ -17,7 +17,10 @@ class StoriesView extends React.Component {
         }
         return (
             <div>
-                <Stories stories={this.props.stories} />
+                <Stories 
+                    stories={this.props.stories}
+                    history={this.props.history} 
+                />
             </div>
         );
     }

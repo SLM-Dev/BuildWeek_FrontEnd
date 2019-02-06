@@ -39,12 +39,13 @@ class App extends Component {
           <Route path="/about-us" component={AboutUsView} />
           <Route exact path="/" component={HomeView} />
           <Route exact path="/stories" component={StoriesView} />
-          <Route path="/stories/:id" render={props => (
-            <Story
-              {...props}
-              stories={this.state.stories}
-            />
-          )}
+          <Route path="/stories/:id" component={StoryView}
+         // render={props => (
+           // <Story
+             // {...props}
+              //stories={this.state.stories} //this.props.stories
+            ///>
+          //)}
           />
           <Route path="/add-story" render={props => <AddStoryFormView {...props} />} />
           <Route path="/thank-you" component={ThankYouView} />
