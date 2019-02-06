@@ -16,8 +16,6 @@ class StoryView extends React.Component {
             console.log(story)
     return (
         <div>
-            Hello from StoryView
-            
             <Story story={story}/>
         </div>
     );

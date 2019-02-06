@@ -4,11 +4,11 @@ import {Link} from 'react-router-dom'
 const Story = props => {
     console.log(props)
     return (
-        <div>
-            <h4>{props.story.title}</h4>
-            <p>{props.story.snippet}</p>
-            <p>By: {props.story.author}</p>
-            <p>{props.story.body}</p>
+        <div className="storyViewWrapper">
+            <h4 className="storyViewTitle">{props.story.title}</h4>
+            <p className="storyViewAuthor">By: {props.story.author}</p>
+            <p className="storyViewCountry">{props.story.country}</p>
+            <p className="storyViewBody">{props.story.body}</p>
         </div>
     )
 };

@@ -27,14 +27,18 @@ class App extends Component {
 
         <div className="topBar">
 
-          <nav>
+          <nav className="navbar">
             <div className="nav-links">
-              <NavLink to="/about-us">About Us</NavLink>
-              <NavLink exact to="/">Home</NavLink>
-              <NavLink to="/stories">Stories</NavLink>
-              <NavLink to="/add-story">Submit Your Story</NavLink>
+              <NavLink className="navLink" to="/about-us">About Us</NavLink>
+              <NavLink className="navLink" exact to="/">Home</NavLink>
+              <NavLink className="navLink" to="/stories">Stories</NavLink>
+              <NavLink className="navLink" to="/add-story">Submit Your Story</NavLink>
             </div>
+
+            <NavLink className="navLink" to="/admin">Admin</NavLink>
           </nav>
+
+        </div>
 
           <Route path="/about-us" component={AboutUsView} />
           <Route exact path="/" component={HomeView} />
@@ -50,7 +54,7 @@ class App extends Component {
           <Route path="/add-story" render={props => <AddStoryFormView {...props} />} />
           <Route path="/thank-you" component={ThankYouView} />
 
-        </div>
+        
       
       </div>
     );

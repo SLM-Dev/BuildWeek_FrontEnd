@@ -1,3 +1,112 @@
 .App {
-  text-align: center;
+}
+
+/* -------TOPBAR---------- */
+
+.topBar {
+  background-color: #d85968;
+}
+
+.navbar{
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+
+}
+
+.link {
+  text-decoration: none;
+}
+
+.navLink {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #574f4f;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #574f4f;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* ---------STORIES LIST----------- */
+
+
+.storiesWrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.storyCardWrapper{
+  margin: 20px 0;
+}
+
+.storyCard{
+  border: 1px solid red;
+  width: 265px;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.storyAuthor {
+  font-size: 2rem;
+  color: #574f4f;
+  margin-bottom: 10px;
+}
+
+.storyCountry {
+  font-size: 1.6rem;
+  color: #574f4f;
+  margin-bottom: 10px;
+}
+
+.storySnippet {
+  font-size: 1.4rem;
+  color: #574f4f;
+  margin-bottom: 10px;
+}
+
+.pixPlaceHolder{
+  width: 245px;
+  height: 179px;
+  background-color: black;
+}
+
+/* ---------SINGLE STORY VIEW------------ */
+
+.storyViewWrapper{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.storyViewTitle{
+  font-size: 2rem;
+  color: #574f4f;
+  margin-bottom: 10px;
+}
+
+.storyViewAuthor {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #574f4f;
+  margin-bottom: 10px;
+}
+
+.storyViewCountry {
+  font-size: 1.6rem;
+  color: #574f4f;
+  margin-bottom: 10px;
+}
+
+.storyViewBody {
+  font-size: 1.4rem;
+  color: #574f4f;
+  margin-bottom: 10px;
 }

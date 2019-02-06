@@ -8,19 +8,26 @@ const Stories = props => {
     return (
 
         <div>
-            <h3>Refugee Stories</h3>
+
+            <div className="storiesWrapper">
 
             {props.stories.map((story) => {
 
                 return (
-                    <Link to={`/stories/${story.id}`} key={story.id}>
-                        <h4>{story.title}</h4>
-                        <p>{story.snippet}</p>
-                        <p>By: {story.author}</p>
-                        {/* <Story key={story.id} story={story} /> */}
+                    <Link className="link" to={`/stories/${story.id}`} key={story.id}>
+                        <div className="storyCardWrapper">
+                            <div className="storyCard">
+                                <h4 className="storyAuthor">{story.author}</h4>
+                                <p className="storyCountry">{story.country}</p>
+                                <p className="storySnippet">{story.snippet}</p>
+                                <div className="pixPlaceHolder"></div>
+                            </div>
+                        </div>
                     </Link>
                 )
             })}
+
+            </div>
 
         </div>
     );
