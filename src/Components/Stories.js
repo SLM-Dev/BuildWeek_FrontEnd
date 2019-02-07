@@ -18,7 +18,8 @@ const Stories = props => {
                                 <h4 className="storyAuthor">{story.author}</h4>
                                 <p className="storyCountry">{story.country}</p>
                                 <p className="storySnippet">{story.snippet}</p>
-                                <div className="pixPlaceHolder"></div>
+                                {/* <div className="pixPlaceHolder"></div> */}
+                                <img src={story.url_thumbnail} alt="refugee img"/>
                             </div>
                         </div>
                     </Link>

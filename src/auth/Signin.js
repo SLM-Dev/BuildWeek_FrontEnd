@@ -26,7 +26,7 @@ class Signin extends React.Component {
 			<form className="signInForm" onSubmit={this.handleSubmit}>
 				<h2 className="adminText">Sign In</h2>
 				<div>
-					<input className="signInFormInput"
+					<input className="formInput"
 						name='username'
 						value={this.state.username}
 						onChange={this.handleInputChange}
@@ -35,7 +35,7 @@ class Signin extends React.Component {
 					/>
 				</div>
 				<div>
-					<input className="signInFormInput"
+					<input className="formInput"
 						name='password'
 						value={this.state.password}
 						onChange={this.handleInputChange}

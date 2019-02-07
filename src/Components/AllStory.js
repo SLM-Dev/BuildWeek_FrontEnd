@@ -46,56 +46,56 @@ class AllStory extends React.Component {
             <div>
 
                 <form className="updateForm">
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='author'
                         value={this.state.author}
                         placeholder='author'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='title'
                         value={this.state.title}
                         placeholder='title'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='snippet'
                         value={this.state.snippet}
                         placeholder='snippet'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='approved'
                         value={this.state.approved}
                         placeholder='approved'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='body'
                         value={this.state.body}
                         placeholder='body'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='country'
                         value={this.state.country}
                         placeholder='country'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='url_picture'
                         value={this.state.url_picture}
                         placeholder='url_picture'
                     />
-                    <input
+                    <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
                         name='url_thumbnail'
