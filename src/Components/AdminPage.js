@@ -19,12 +19,10 @@ class AdminPage extends Component {
 			<>				
 				<header>
 					<nav className="adminNavbar">
-						<NavLink className="navLink" to='/admin/signin'>Signin</NavLink>
-						&nbsp;|&nbsp;
-						<NavLink className="navLink" to='/admin/all-stories'>All Stories</NavLink>
-						&nbsp;|&nbsp;
-						<NavLink className="navLink" to='/admin/singout' onClick={this.props.logout}>
-							SignOut
+						<NavLink className="navAdminLink" to='/admin/signin'>Sign In</NavLink>
+						<NavLink className="navAdminLink" to='/admin/all-stories'>All Stories</NavLink>
+						<NavLink className="navAdminLink" to='/admin/singout' onClick={this.props.logout}>
+							Sign Out
 						</NavLink>
 					</nav>
 				</header>

@@ -26,21 +26,21 @@ class AllStories extends React.Component {
 
 	render() {
 		if (this.props.self.length === 0) {
-			return <div>You must log in to view users</div>;
+			return <div className="adminText">You must log in to view all the stories</div>;
 		}
 		// Check to make sure all state is initiallized
-		else if (!this.state.OKToRender) return <div> Loading...</div>;
+		else if (!this.state.OKToRender) return <div className="adminText"> Loading...</div>;
 console.log("test from AllStories.js", this.props.allStories)
 		return (
 			<>
-				<h2>List of All Stories</h2>
+				<h2 className="adminText">List of All Stories</h2>
 					<ul>
 						{this.props.allStories.map(allStory => {
 
 							return (
 
-								<Link to={`/admin/all-stories/${allStory.id}`} key={allStory.id}>
-								<li>{allStory.title}</li>
+								<Link className="adminStoriesListLink"to={`/admin/all-stories/${allStory.id}`} key={allStory.id}>
+								<li className="adminStoriesList">{allStory.title}</li>
 								</Link>
 
 							)

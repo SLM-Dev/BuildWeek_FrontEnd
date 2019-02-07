@@ -30,7 +30,7 @@ class App extends Component {
               <NavLink className="navLink" to="/about-us">About Us</NavLink>
               <NavLink className="navLink" exact to="/">Home</NavLink>
               <NavLink className="navLink" to="/stories">Stories</NavLink>
-              <NavLink className="navLink" to="/add-story">Submit Your Story</NavLink>
+              <NavLink className="navLink" to="/add-story">Share Your Story</NavLink>
             </div>
 
             <NavLink className="navLink" to="/admin">Admin</NavLink>

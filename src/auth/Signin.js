@@ -21,30 +21,30 @@ class Signin extends React.Component {
 
 	render() {
 		if (this.props.self !== '')
-			return <div>Logged in as {this.props.self}</div>;
+			return <div className="adminText">Logged in as {this.props.self}</div>;
 		return (
-			<form onSubmit={this.handleSubmit}>
-				<h2>Sign IN!</h2>
+			<form className="signInForm" onSubmit={this.handleSubmit}>
+				<h2 className="adminText">Sign In</h2>
 				<div>
-					<label htmlFor=''>Username</label>
-					<input
+					<input className="signInFormInput"
 						name='username'
 						value={this.state.username}
 						onChange={this.handleInputChange}
 						type='text'
+						placeholder=" Username"
 					/>
 				</div>
 				<div>
-					<label htmlFor=''>Password</label>
-					<input
+					<input className="signInFormInput"
 						name='password'
 						value={this.state.password}
 						onChange={this.handleInputChange}
 						type='password'
+						placeholder=" Password"
 					/>
 				</div>
 				<div>
-					<button type='submit'>Signin</button>
+					<button className="signInBtn" type='submit'>Sign In</button>
 				</div>
 			</form>
 		);

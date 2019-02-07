@@ -21,15 +21,12 @@
 }
 
 .navLink {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #574f4f;
+  color: white;
   text-decoration: none;
   padding: 10px;
   margin: 10px 5px;
-  border: 1px solid #574f4f;
-  background-color: white;
-  border-radius: 5px;
 }
 
 /* ---------STORIES LIST----------- */
@@ -48,7 +45,6 @@
 }
 
 .storyCard{
-  border: 1px solid red;
   width: 265px;
   padding: 10px;
   margin: 0 5px;
@@ -68,6 +64,7 @@
 
 .storySnippet {
   font-size: 1.4rem;
+  line-height: 2rem;
   color: #574f4f;
   margin-bottom: 10px;
 }
@@ -75,7 +72,7 @@
 .pixPlaceHolder{
   width: 245px;
   height: 179px;
-  background-color: black;
+  background-color: #9aadd2;
 }
 
 /* ---------SINGLE STORY VIEW------------ */
@@ -112,6 +109,103 @@
   line-height: 2.5rem;
 }
 
+/* ------------Add Story Form--------------- */
+
+.addStoryFormWrapper{
+  max-width: 600px; 
+  margin: 20px auto;
+}
+
+.addStoryTitle {
+  font-size: 3rem;
+  color: #574f4f;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.inputBox{
+  margin-bottom: 20px;
+  height: 40px;
+  font-size: 1.6rem;
+  color: #574f4f;
+}
+
+.submitBtn {
+  width: 125px;  
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #574f4f;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #574f4f;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* ---------------Admin---------------- */
+
+.adminNavbar{
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+}
+
+.navAdminLink {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #d85968;
+  border-radius: 5px;
+}
+
+.adminText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #574f4f;
+  margin: 20px 0;
+}
+
+.signInForm{
+  width: 175px;
+  margin: auto;
+}
+
+.signInFormInput{
+  margin-bottom: 10px;
+}
+
+.signInBtn{
+  width: 175px;  
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #574f4f;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #574f4f;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.adminStoriesListLink {
+  text-decoration: none;
+}
+
+.adminStoriesList{
+  font-size: 2rem;
+  text-align: center;
+  color: #574f4f;
+  margin: 20px 0;
+}
+
 /* ------------Update Form--------------- */
 
 .updateForm {
@@ -120,16 +214,9 @@
   flex-direction: column;
 }
 
-.adminNavbar{
-  max-width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 0 auto;
-}
+
 
 .adminContent {
-  border: 1px solid green;
   max-width: 600px;
   margin: 0 auto;
 

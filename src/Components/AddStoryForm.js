@@ -28,43 +28,45 @@ class AddStoryForm extends React.Component {
     render() {
         return (
 
-            <div>
+            <div className="addStoryFormWrapper">
 
-                <form>
+                <h2 className="addStoryTitle">Share Your Story</h2>
 
-                    <input
+                <form className="updateForm">
+
+                    <input className="inputBox"
                         onChange={this.handleChanges}
                         type='text'
                         name='author'
                         value={this.state.author}
-                        placeholder='Name'
+                        placeholder=' Your Name'
                     />
 
-                    <input
+                    <input className="inputBox"
                         onChange={this.handleChanges}
                         type='text'
                         name='country'
                         value={this.state.country}
-                        placeholder='Origin Country'
+                        placeholder=' Your Country of Origin'
                     />
 
-                    <input
+                    <input className="inputBox"
                         onChange={this.handleChanges}
                         type='text'
                         name='title'
                         value={this.state.title}
-                        placeholder='Title'
+                        placeholder=' Your Story Title'
                     />
 
-                    <input
+                    <input className="inputBox"
                         onChange={this.handleChanges}
                         type='text'
                         name='body'
                         value={this.state.body}
-                        placeholder='Story'
+                        placeholder=' Your Story...'
                     />
 
-                    <button onClick={this.addNewStory}>Add Story</button>
+                    <button className="submitBtn" onClick={this.addNewStory}>Share Story</button>
 
                 </form>
 

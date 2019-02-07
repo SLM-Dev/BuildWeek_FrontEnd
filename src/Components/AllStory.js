@@ -51,68 +51,56 @@ class AllStory extends React.Component {
                         type='text'
                         name='author'
                         value={this.state.author}
+                        placeholder='author'
                     />
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='title'
                         value={this.state.title}
+                        placeholder='title'
                     />
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='snippet'
                         value={this.state.snippet}
+                        placeholder='snippet'
                     />
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='approved'
                         value={this.state.approved}
+                        placeholder='approved'
                     />
-
-                    {/* Approved?<br/>
-                    Yes
-                    <input
-                        onChange={this.handleOptionChange}
-                        type='radio'
-                        name='approved'
-                        value={1}
-                        checked={this.state.approved === 1}
-                    />
-                    no 
-                    <input
-                        onChange={this.handleOptionChange}
-                        type='radio'
-                        name='approved'
-                        value={0}
-                        checked={this.state.approved === 0}
-                    /> */}
-
-
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='body'
                         value={this.state.body}
+                        placeholder='body'
                     />
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='country'
                         value={this.state.country}
+                        placeholder='country'
                     />
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='url_picture'
                         value={this.state.url_picture}
+                        placeholder='url_picture'
                     />
                     <input
                         onChange={this.handleChanges}
                         type='text'
                         name='url_thumbnail'
                         value={this.state.url_thumbnail}
+                        placeholder='url_thumbnail'
                     />
 
                     <button onClick={this.updateAllStory}>Update Story</button>
