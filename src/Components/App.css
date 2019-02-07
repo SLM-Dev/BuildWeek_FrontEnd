@@ -81,7 +81,7 @@
 /* ---------SINGLE STORY VIEW------------ */
 
 .storyViewWrapper{
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
   padding: 0 10px;
 }
@@ -89,7 +89,7 @@
 .storyViewTitle{
   font-size: 2rem;
   color: #574f4f;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .storyViewAuthor {
@@ -102,11 +102,35 @@
 .storyViewCountry {
   font-size: 1.6rem;
   color: #574f4f;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .storyViewBody {
   font-size: 1.4rem;
   color: #574f4f;
   margin-bottom: 10px;
+  line-height: 2.5rem;
+}
+
+/* ------------Update Form--------------- */
+
+.updateForm {
+  max-width: 600px;;
+  display: flex;
+  flex-direction: column;
+}
+
+.adminNavbar{
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+}
+
+.adminContent {
+  border: 1px solid green;
+  max-width: 600px;
+  margin: 0 auto;
+
 }

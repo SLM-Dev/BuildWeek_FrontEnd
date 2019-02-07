@@ -17,7 +17,12 @@ import {
   GET_ALL_STORIES_FAILURE,
 
 	//Logout
-	LOGOUT
+  LOGOUT,
+  
+  //Update story
+  UPDATE_START,
+  UPDATE_SUCCESS,
+  UPDATE_FAILURE,
 } from '../actions';
 
 const initialState = {
@@ -28,7 +33,8 @@ const initialState = {
 	logingIn: false,
 	gettingAllStories: false,
 	allStories: [],
-	self: '',
+  self: '',
+  updatingStory: false
 };
 
 const storiesReducer = (state = initialState, action) => {
@@ -97,6 +103,28 @@ const storiesReducer = (state = initialState, action) => {
     //Logout
     case LOGOUT:
       return {...state, allStories: [], self: ''};
+    
+    //Update story
+    case UPDATE_START:
+      return {
+        ...state,
+        updatingStory: true
+      };
+
+    case UPDATE_SUCCESS:
+      return {
+        ...state,
+        error: null,
+        updatingStory: false,
+      };
+
+    case UPDATE_FAILURE:
+      return {
+        ...state,
+        updatingStory: false,
+        error: action.payload
+      };
+
     default:
       return state;    
   }

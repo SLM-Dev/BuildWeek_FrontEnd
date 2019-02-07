@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {withRouter, Route, NavLink} from 'react-router-dom';
 import { logout } from '../actions';
 import AllStories from './AllStories';
+import AllStoryView from '../views/AllStoryView';
 import Signin from '../auth/Signin';
 
 class AdminPage extends Component {
@@ -17,19 +18,21 @@ class AdminPage extends Component {
 		return (
 			<>				
 				<header>
-					<nav>
-						<NavLink to='/admin/signin'>Signin</NavLink>
+					<nav className="adminNavbar">
+						<NavLink className="navLink" to='/admin/signin'>Signin</NavLink>
 						&nbsp;|&nbsp;
-						<NavLink to='/admin/all-stories'>All Stories</NavLink>
+						<NavLink className="navLink" to='/admin/all-stories'>All Stories</NavLink>
 						&nbsp;|&nbsp;
-						<NavLink to='/admin/singout' onClick={this.props.logout}>
+						<NavLink className="navLink" to='/admin/singout' onClick={this.props.logout}>
 							SignOut
 						</NavLink>
 					</nav>
 				</header>
-				<main>
+				<main className="adminContent">
 					<Route path='/admin/signin' component={Signin} />
-					<Route path='/admin/all-stories' component={AllStories} />
+					<Route exact path='/admin/all-stories' component={AllStories} />
+					{/* <Route path="/admin/all-stories/:id" component={AllStoryView} /> */}
+					<Route path="/admin/all-stories/:id" render={props => <AllStoryView {...props} />} />
 				</main>
 			</>
 		);
