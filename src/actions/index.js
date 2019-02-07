@@ -11,3 +11,16 @@ export {
     ADD_STORY_FAILURE,
     addStory
   } from './addStoryActions';
+
+  export{
+    LOGIN_START,
+    LOGIN_SUCCESS,
+    LOGIN_FAILURE,
+    GET_ALL_STORIES_START,
+    GET_ALL_STORIES_SUCCESS,
+    GET_ALL_STORIES_FAILURE,
+    LOGOUT,
+    login,
+    logout,
+    getAllStories,
+  } from './adminActions'

@@ -3,9 +3,7 @@ import { Route, NavLink } from 'react-router-dom';
 import './App.css';
 
 import { HomeView, StoriesView, AddStoryFormView, AboutUsView, ThankYouView, StoryView } from '../views';
-import Story from './Story';
-
-// import authenticate from './authentication';
+import AdminPage from './AdminPage';
 
 class App extends Component {
   constructor(props) {
@@ -43,16 +41,10 @@ class App extends Component {
           <Route path="/about-us" component={AboutUsView} />
           <Route exact path="/" component={HomeView} />
           <Route exact path="/stories" component={StoriesView} />
-          <Route path="/stories/:id" component={StoryView}
-         // render={props => (
-           // <Story
-             // {...props}
-              //stories={this.state.stories} //this.props.stories
-            ///>
-          //)}
-          />
+          <Route path="/stories/:id" component={StoryView} />
           <Route path="/add-story" render={props => <AddStoryFormView {...props} />} />
           <Route path="/thank-you" component={ThankYouView} />
+          <Route path="/admin" component={AdminPage} />
 
         
       
@@ -60,8 +52,5 @@ class App extends Component {
     );
   }
 }
-
-
-// export default authenticate(App);
 
 export default App;
