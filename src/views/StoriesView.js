@@ -13,7 +13,7 @@ class StoriesView extends React.Component {
 
     render() {
         if (this.props.isFetching) {
-            return <h3>Loading Stories...</h3>;
+            return <h3 className="adminText">Loading Stories...</h3>;
         }
         return (
             <div>
