@@ -103,7 +103,7 @@ class AllStory extends React.Component {
                         placeholder='url_thumbnail'
                     />
 
-                    <button onClick={this.updateAllStory}>Update Story</button>
+                    <button className="submitBtn" onClick={this.updateAllStory}>Update Story</button>
 
                 </form>
 
