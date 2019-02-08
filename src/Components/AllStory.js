@@ -46,6 +46,7 @@ class AllStory extends React.Component {
             <div>
 
                 <form className="updateForm">
+                    <h5>Author Name</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -53,6 +54,7 @@ class AllStory extends React.Component {
                         value={this.state.author}
                         placeholder='author'
                     />
+                    <h5>Title Name</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -60,6 +62,7 @@ class AllStory extends React.Component {
                         value={this.state.title}
                         placeholder='title'
                     />
+                    <h5>Story Snippet</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -67,6 +70,7 @@ class AllStory extends React.Component {
                         value={this.state.snippet}
                         placeholder='snippet'
                     />
+                    <h5>Is this story approved?    0 = NO    1 = YES</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -74,6 +78,7 @@ class AllStory extends React.Component {
                         value={this.state.approved}
                         placeholder='approved'
                     />
+                    <h5>Story</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -81,6 +86,7 @@ class AllStory extends React.Component {
                         value={this.state.body}
                         placeholder='body'
                     />
+                    <h5>Country of Origin</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -88,6 +94,7 @@ class AllStory extends React.Component {
                         value={this.state.country}
                         placeholder='country'
                     />
+                    <h5>Main Hi-res photo Url</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
@@ -95,6 +102,7 @@ class AllStory extends React.Component {
                         value={this.state.url_picture}
                         placeholder='url_picture'
                     />
+                    <h5>Main Low-res thumbnail Url</h5>
                     <input className="formInput"
                         onChange={this.handleChanges}
                         type='text'
