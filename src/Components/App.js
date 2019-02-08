@@ -27,7 +27,7 @@ class App extends Component {
 
           <nav className="navbar">
             <div className="nav-links">
-              <NavLink className="navLink" to="/about-us">About Us</NavLink>
+              {/* <NavLink className="navLink" to="/about-us">About Us</NavLink> */}
               <NavLink className="navLink" exact to="/">Home</NavLink>
               <NavLink className="navLink" to="/stories">Stories</NavLink>
               <NavLink className="navLink" to="/add-story">Share Your Story</NavLink>
